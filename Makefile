@@ -1,4 +1,4 @@
-TARGETS="freebsd/amd64 linux/amd64"
+TARGETS="freebsd/amd64 linux/amd64 solaris/amd64"
 COMMIT_HASH=`git rev-parse --short HEAD 2>/dev/null`
 
 check: get fmt vet lint test test-race
